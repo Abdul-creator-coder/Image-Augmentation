@@ -3,7 +3,11 @@ This code performs data augmentation on an image using the Albumentations librar
 The visualize() function is defined to display the image using Matplotlib.
 The first line loads an image from a file path using the OpenCV library and assigns it to the variable image. 
 The visualize() function is then called to display the original image.
-The transform variable defines a series of image augmentation operations using the A.Compose() function. These operations include:
+The transform variable defines a series of image augmentation operations using the A.Compose() function. 
+A.Compose() function to create a pipeline of image augmentation operations. 
+The Compose function is a class in the Albumentations library that allows us to chain multiple image augmentation operations together.
+By using the A.Compose() function, we can define a series of image augmentation operations to be applied to an input image in a specific order. Each operation can be defined using a specific class in the Albumentations library, such as HorizontalFlip, Resize, RandomRotate90, and so on.
+These operations include:
 HorizontalFlip(): flips the image horizontally with a 90% probability (p=0.9)
 VerticalFlip(): flips the image vertically with a 70% probability (p=0.7)
 Resize(): resizes the image to a height of 106 pixels and a width of 160 pixels using nearest neighbor interpolation
