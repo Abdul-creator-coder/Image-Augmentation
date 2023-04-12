@@ -17,10 +17,15 @@ By using the A.Compose() function, we can define a series of image augmentation 
 
 These operations include:
 1)HorizontalFlip(): flips the image horizontally with a 90% probability (p=0.9)
+
 2)VerticalFlip(): flips the image vertically with a 70% probability (p=0.7)
+
 3)Resize(): resizes the image to a height of 106 pixels and a width of 160 pixels using nearest neighbor interpolation
+
 4)RandomRotate90(): randomly rotates the image by 90 degrees
+
 5)HueSaturationValue(): randomly changes the hue, saturation, and value of the image
+
 6)InvertImg(): inverts the colors of the image
 
 The transform() function is then called on the original image image using the transform variable as an argument. The transformed image is stored in the variable augmented_image.
